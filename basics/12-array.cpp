@@ -34,5 +34,7 @@ int main() {
     for (int i = 0; i < size; i++) {  // loop through the array using calculated size
         std::cout << arr4[i] << std::endl;  // print each element
     }
+
+    // and we can use this with char and other data types as well.
  
 }
