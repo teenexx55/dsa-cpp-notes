@@ -16,5 +16,23 @@ int main() {
     std::cout << arr2[1] << std::endl;  // access second element
 
     return 0;
+
+    // insted of calling each element one by one, we can use a loop to 
+    //iterate through the array and print all elements.
+
+    int arr3[] = {10, 20, 30, 40, 50};  
+    for (int i = 0; i < 5; i++) {  // loop through the array → i is the index
+        std::cout << arr3[i] << std::endl;  // print each element
+    }
+
+    // to calculate size automatically, we can use sizeof() operator to get the 
+    //size of the array and divide it by the size of one element to get the 
+    //number of elements in the array.
+
+    int arr4[] = {5, 15, 25, 35, 45, 55};  // array of integers → fixed size → 6 elements
+    int size = sizeof(arr4) / sizeof(arr4[0]);  // calculate number of elements in the array
+    for (int i = 0; i < size; i++) {  // loop through the array using calculated size
+        std::cout << arr4[i] << std::endl;  // print each element
+    }
  
 }
