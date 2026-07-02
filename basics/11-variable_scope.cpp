@@ -42,7 +42,7 @@ void printName(std::string name) {
 }
 
 int main() {
-    std::string myName = "Ishu";  // local variable inside main
+    std::string myName = "teenexx";  // local variable inside main
 
     printName(myName);  // passing myName as an argument → its VALUE gets copied into name parameter
                         // this is how you "share" a local variable with another function
