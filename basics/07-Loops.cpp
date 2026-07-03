@@ -35,5 +35,20 @@ int main() {
         std::cout << k << std::endl;  // prints 0 1 2 3 4 6 7 8 9
     }
 
+    // nested loops → loop inside another loop
+    for(int m = 0; m < 3; m++) {      // outer loop → runs 3 times
+        for(int n = 0; n < 2; n++) {  // inner loop → runs 2 times for each outer loop iteration
+            std::cout << "Outer: " << m << ", Inner: " << n << std::endl;  // prints combinations of m and n
+        }
+    }
+
+    // foreach loop → introduced in C++11, used to iterate over elements of a collection (like arrays, vectors)
+    std::string fruits[] = {"Apple", "Banana", "Cherry"};
+    for(int i = 0; i < sizeof(fruits)/sizeof(fruits[0]); i++) {  // loop through the array using calculated size
+        std::cout << fruits[i] << std::endl;  // prints each fruit
+    }
+        std::cout << fruit << std::endl;  // prints each fruit
+    }
+
     return 0;
 }
