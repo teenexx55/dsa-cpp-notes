@@ -25,5 +25,5 @@ int main() {
     std::string students[] = {"student1", "student2", "student3"};  // array of strings
     std::cout << sizeof(students) / sizeof(students[0]);  // number of elements → 3
 
-    return 0;
+    return 0; // reutrn 0 → indicates program ran successfully
 }
