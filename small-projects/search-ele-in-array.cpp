@@ -37,3 +37,44 @@ int search(int arr[], int size, int element) {
     }
     return -1;  // return -1 if the element is not found
 }
+
+
+
+
+
+
+// Now for the string search.
+
+#include <iostream>
+
+int search(std::string arr[], int size, std::string element);  // function prototype → tells the compiler this function exists before main()
+
+int main() {
+
+    std::string arr[] = {"apple", "banana", "cherry", "date", "elderberry"};  // array of strings → fixed size → 5 elements
+    int size = sizeof(arr)/sizeof(arr[0]);  // calculate number of elements in the array
+    int index;
+    std::string myFruit;
+
+    std::cout << "ENTER THE FRUIT YOU WANT TO SEARCH: ";
+    std::getline(std::cin, myFruit);
+
+    index = search(arr, size, myFruit);  // call the search function and store the result in search variable
+
+    if(index != -1) {
+        std::cout << myFruit << " ELEMENT FOUND AT INDEX: " << index << std::endl;  // print the index if found
+    } else {
+        std::cout << myFruit << " NOT FOUND" << std::endl;  // print not found message
+    }
+
+    return 0;
+}
+
+int search(std::string arr[], int size, std::string element) {
+    for(int i = 0; i < size; i++) {
+        if(arr[i] == element) {
+            return i;
+        }
+    }
+    return -1;  // return -1 if the element is not found
+}
