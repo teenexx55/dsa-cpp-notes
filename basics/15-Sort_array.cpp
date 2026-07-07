@@ -17,7 +17,7 @@ void sort(int array[], int size) {
                 array[j + 1] = temp;               // step 3 → put saved element in next position
             }                                      // swap complete → bigger number moved to the left
         }
-    }
+    } 
 }
 
 int main() {
@@ -32,3 +32,10 @@ int main() {
 
     return 0;
 }
+
+// quick summary of bubble sort:
+
+// compares two neighbours at a time
+// swaps them if they're in wrong order
+// repeats until everything is sorted
+// not the fastest sorting algorithm but the easiest to understand
