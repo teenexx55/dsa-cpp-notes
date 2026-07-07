@@ -20,7 +20,7 @@ int main() {
 
     std::cout << sizeof(arr) << std::endl;         // total size of array in bytes → 4 (4 chars x 1 byte each)
     std::cout << sizeof(arr) / sizeof(arr[0]);     // total size / size of one element → gives number of elements → 4
-    .                                              // this is the standard way to find array length in C++
+                                                 // this is the standard way to find array length in C++
 
     std::string students[] = {"student1", "student2", "student3"};  // array of strings
     std::cout << sizeof(students) / sizeof(students[0]);  // number of elements → 3
