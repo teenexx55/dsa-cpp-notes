@@ -1,9 +1,12 @@
 #include <iostream>
 #include <algorithm>  // needed for fill()
 
+// seat booking project using fill() to initialize all seats as "Empty" 
+// and then allow user to book a seat and update the chart with name.
+
 int main() {
 
-    const int SIZE = 20;          // constant → total number of seats
+    const int SIZE = 20;          // constant → total fixed number of seats available
     std::string seats[SIZE];      // array of 20 seats
 
     std::fill(seats, seats + SIZE, "Empty");  
@@ -39,6 +42,7 @@ int main() {
     for(int i = 0; i < SIZE; i++) {
         std::cout << "Seat " << i + 1 << ": " << seats[i] << "\n";
         // i + 1 because we want to show seat numbers starting from 1 not 0
+        // since array indexing starts from 0
     }
 
     return 0;
