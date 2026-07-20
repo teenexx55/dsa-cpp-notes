@@ -27,8 +27,8 @@ int main() {
 
     // with strings → like a mini spreadsheet
     std::string students[2][3] = {
-        {"Ishu", "20", "Amity"},    // row 0 → student 1
-        {"Teenexx", "21", "Delhi"}  // row 1 → student 2
+        {"Ishu", "16", "Noida"},    // row 0 → student 1
+        {"Teenexx", "18", "Delhi"}  // row 1 → student 2
     };
 
     for(int i = 0; i < 2; i++) {
